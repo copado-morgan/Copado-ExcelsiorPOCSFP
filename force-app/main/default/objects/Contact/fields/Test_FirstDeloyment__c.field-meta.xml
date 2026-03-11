@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Test_FirstDeloyment__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <defaultValue>&apos;1&apos;</defaultValue>
+    <description>Hello World</description>
+    <externalId>true</externalId>
+    <inlineHelpText>Hello World</inlineHelpText>
+    <label>Test_FirstDeloyment</label>
+    <length>100</length>
+    <required>true</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>
