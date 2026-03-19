@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Applicants in certain programs must complete an enrollment agreement.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Enrollment Agreement</name>
+    <relatedEntityType>hed__Application__c</relatedEntityType>
+    <style>none</style>
+    <subject>Action Required: Sign Your Excelsior University Enrollment Agreement</subject>
+    <type>custom</type>
+    <uiType>SFX</uiType>
+</EmailTemplate>

@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body style="height: auto; min-height: auto;">
+<p>Dear {{Recipient.FirstName}},</p>
+
+<p>As part of your application for admission to <strong>{{{hed__Application__c.Program_Name__c}}}</strong> at St. Petersburg, Florida–based Excelsior University program with an in-person component, you are required to review, sign, and return the Enrollment Agreement linked below.</p>
+
+<p><a href="https://excelsior.tfaforms.net/wfVjMqj?RID={{hed__Application__c.Id}}" style="color:#0056b3; text-decoration:none; font-weight:bold;">Click here to access your Enrollment Agreement</a><a href="https://excelsior.tfaforms.net/wfAjxLj?RID={{hed__Application__c.Id}}" style="color:#0056b3; text-decoration:none; font-weight:bold;"> </a></p>
+
+<p>This document outlines the terms of your enrollment and becomes a binding agreement once signed by both you and a university representative. You will receive a copy of the fully executed agreement for your records.</p>
+
+<p>If you have any questions about the form or your program, please contact your Admissions Counselor, <strong>{{Recipient.Contact_Owner_Name__c}} </strong>at {{{Recipient.Owner_Phone__c}}} or {{{Recipient.Owner_Email__c}}}.</p>
+
+<p>Please complete this step promptly to avoid delays in your application process. Thank you for your prompt attention to this required step in your application.</p>
+
+<p>Sincerely,</p>
+
+<p><strong>Excelsior University<br />
+Office of Admissions</strong></p>
+</body>
+</html>

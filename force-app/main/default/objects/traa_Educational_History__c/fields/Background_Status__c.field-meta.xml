@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Background_Status__c</fullName>
+    <description>Returns a color image based on the status of the Transcript Status field. Field will be added to highlights panel of the Educational History lightning page.</description>
+    <externalId>false</externalId>
+    <formula>/*Returns a color image based on the status of the Transcript Status field. Field will be added to highlights panel of the Educational History lightning page.*/
+
+CASE(Transcript_Status__c, 
+&apos;Not Yet Received&apos;, IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &apos;&apos;,50,50), 
+&apos;Compliant&apos;,IMAGE(&quot;/img/samples/color_green.gif&quot;, &apos;&apos;,50,50),
+&apos;Non-Compliant&apos;,IMAGE(&quot;/img/samples/color_red.gif&quot;, &apos;&apos;,50,50),
+&apos;&apos;)</formula>
+    <inlineHelpText>When yellow, this student’s nursing background check has not yet been approved. When it is green, it has been approved. When red, the background check has failed.</inlineHelpText>
+    <label>Background Status</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
