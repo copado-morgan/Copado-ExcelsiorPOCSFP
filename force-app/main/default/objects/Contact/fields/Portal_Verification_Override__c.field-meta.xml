@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Portal_Verification_Override__c</fullName>
+    <defaultValue>false</defaultValue>
+    <description>This Checkbox is selected MANUALLY via Excelsior Users. When this checkbox is set to &apos;true&apos; it bypasses the user email/sms process and uses the code from Portal_Verification_Code</description>
+    <inlineHelpText>Please check this box when you want to manually bypass the Application Portal MFA for students. You will be asked to enter a 5 digit code in the field below.</inlineHelpText>
+    <label>Portal Verification Override</label>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <type>Checkbox</type>
+</CustomField>
