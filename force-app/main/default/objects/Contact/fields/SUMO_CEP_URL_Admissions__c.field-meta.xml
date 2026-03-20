@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SUMO_CEP_URL_Admissions__c</fullName>
+    <description>A custom SUMO Admissions Scheduling Link for appointments connecting a specific Admissions Counselor with a specific contact.</description>
+    <externalId>false</externalId>
+    <formula>/*The SUMO Admissions Scheduling Link for appointments connecting a specific Admissions Counselor with a specific contact.*/
+
+IF(
+NOT(ISBLANK(OwnerId)),
+&quot;https://excelsior.my.site.com/s/onlinescheduler?processId=a9n4O000000g0zaQAA&quot; &amp;
+&quot;&amp;whoId=&quot; &amp; OwnerId &amp;
+&quot;&amp;clientId=&quot; &amp; Id,
+&quot;&quot;
+)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <inlineHelpText>Use this custom link to schedule a SUMO Admissions appointment between the contact owner and the contact.</inlineHelpText>
+    <label>SUMO CEP URL Admissions</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>
